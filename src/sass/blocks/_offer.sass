@@ -1,0 +1,139 @@
+.offer
+  background: url("../img/offer/bg-offer.png") no-repeat
+  background-position: center right
+  background-size: contain
+  
+  position: relative
+  &:before
+    content: ""
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #fff
+    top: 0
+    left: 0
+  &-info
+    width: 100%
+    display: flex
+  &-block
+    padding-top: 52px
+    width: 50%
+    position: relative
+  &__title
+    text-align: left
+    max-width: 360px
+    +bold
+    font-size: 24px
+    line-height: 35px
+  &__subtitle
+    font-size: 16px
+    text-align: left
+    max-width: 250px
+    margin-bottom: 30px
+    +reg
+    font-size: 16px
+    line-height: 20px
+  &__input
+    margin-bottom: 30px
+    margin-right: 13px
+    outline: none
+    animation-name: blincInput
+    animation-iteration-count: 3;
+    animation-duration: 1s
+    &:focus
+      border: 1px solid #FF8C00
+  &__button
+    min-width: 85%
+    padding-top: 27px
+    padding-bottom: 20px
+    +bold
+    font-size: 16px
+    line-height: 17px
+  &__support
+    margin-right: 70px
+    margin-top: 28px
+    +reg
+    font-size: 15px
+    line-height: 24px
+    margin-bottom: 94px
+    strong
+      +bold
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__title
+      width: 90%
+    &__input
+      width: 85%
+    &__button
+      font-size: 14px
+    &-info
+      display: block
+      margin-top: 20px
+      margin-left: 8px
+      padding-bottom: 56px
+    &__support
+      display: block
+      margin: 0
+      padding: 0
+      font-size: 15px
+      margin-bottom: 7px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+    &__input
+      max-width: 95%
+    &__button
+      max-width: 100%
+    &-info
+      display: block
+      margin-top: 20px
+      margin-left: 8px
+      padding-bottom: 56px
+    &__support
+      display: block
+      margin: 0
+      padding: 0
+      font-size: 15px
+      margin-bottom: 7px
+@media (max-width: 567px)
+  .offer
+    &-block
+      margin-top: 10px
+      max-width: 100%
+    &__title
+      width: 100%
+      margin-left: 2px
+      padding-top: 24px
+      font-size: 18px 
+      line-height: 22px 
+      max-width: 270px
+      +bold
+    &__subtitle
+      margin-bottom: 28px
+      line-height: 18px
+      font-size: 14px  
+    &-info
+      display: block
+      margin-top: 20px
+      padding-bottom: 46px
+    &__support
+      display: block
+      margin: 0
+      padding: 0
+      font-size: 15px
+      margin-bottom: 7px
+    &__button 
+      padding: 20px 38px 18px 38px
+      font-size: 14px
+      width: 98%
+    &__input
+      padding: 20px 25px 20px 25px
+      font-size: 15px
+      line-height: 24px
+      width: 100%
+      margin-bottom: 8px
+      margin-left: 0
+

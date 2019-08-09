@@ -1,0 +1,65 @@
+*
+  box-sizing: border-box
+body
+  +bold
+img
+  max-width: 100%
+.container 
+  max-width: 1170px
+  margin: auto
+.button
+  outline: none
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  color: $text-color
+  font-family: "Museo Sans Cyrl 700"
+  font-size: 13px
+  font-weight: 400
+  padding: 17px 30px
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.input
+  outline: none
+  border-radius: 10px
+  border: 1px solid $border-input
+  padding: 20px 60px 20px 25px
+  +reg
+  font-size: 15px
+  line-height: 24px
+  outline: none
+  &:focus
+      border: 1px solid #FF8C00
+.arrow-left, .arrow-right
+    &:hover
+      cursor: pointer
+@media (max-width: 1200px)
+  .container 
+    max-width: 760px
+@media (max-width: 768px)
+  .container 
+    max-width: 535px
+@media (max-width: 567px)
+  .container 
+    max-width: 279px
+.section
+  &-title
+    text-align: center
+    font-size: 24px
+    +bold
+    font-size: 30px
+    line-height: 45px
+  &-subtitle
+    text-align: center
+    display: block
+    +reg
+    font-size: 20px
+    font-weight: 400
+    line-height: 45px
+    
+
+  
+
+
+  
