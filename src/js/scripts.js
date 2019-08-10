@@ -10,6 +10,9 @@ $(document).ready(function(){
       email: {
         required: true,
         email: true
+      },
+      phone: {
+        required: true
       }
     },
     messages: {
@@ -28,6 +31,9 @@ $(document).ready(function(){
         required: true,
         minlength: 2,
         maxlength: 15
+      },
+      phone: {
+        required: true
       }
     },
     messages: {
@@ -45,6 +51,9 @@ $(document).ready(function(){
         required: true,
         minlength: 2,
         maxlength: 15
+      },
+      phone: {
+        required: true
       }
     },
     messages: {
@@ -53,8 +62,10 @@ $(document).ready(function(){
         minlength: jQuery.validator.format("осталось символов: {0}"),
         maxlength: "максимальное число символов - 15"
       },
-      phone: "укажите номер вашего телефона"
-    }
+      phone: {
+        required: "укажите номер вашего телефона"
+      }
+    },
   });
   $("#phone").mask("8(999) 999-9999");
   $("#phone-modal").mask("8(999) 999-9999");
