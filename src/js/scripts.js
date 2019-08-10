@@ -1,9 +1,69 @@
 $(document).ready(function(){
   new WOW().init();
+  $("#brif-form").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      username: {
+        required: "Обязательно укажите ваше имя",
+        minlength: jQuery.validator.format("осталось символов: {0}"),
+        maxlength: "максимальное число символов - 15"
+      },
+      email: "Укажите корректный email адрес",
+      phone: "укажите номер вашего телефона"
+    }
+  });
+  $("#offer-form").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      }
+    },
+    messages: {
+      username: {
+        required: "Обязательно укажите ваше имя",
+        minlength: jQuery.validator.format("осталось символов: {0}"),
+        maxlength: "максимальное число символов - 15"
+      },
+      phone: "укажите номер вашего телефона"
+    }
+  });
+  $("#modal__form").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      }
+    },
+    messages: {
+      username: {
+        required: "Обязательно укажите ваше имя",
+        minlength: jQuery.validator.format("осталось символов: {0}"),
+        maxlength: "максимальное число символов - 15"
+      },
+      phone: "укажите номер вашего телефона"
+    }
+  });
+  $("#phone").mask("8(999) 999-9999");
+  $("#phone-modal").mask("8(999) 999-9999");
+  $("#phone-offer").mask("8(999) 999-9999");
   var offer = $("#offer-form");
   var popup = $("#popup");
   var close = $("#close");
   var left = $("#arrow-left");
+  // скрипт слайдера
   $("#offer-form").on("submit", function (event) {
     event.preventDefault();
     $.ajax({
@@ -18,9 +78,9 @@ $(document).ready(function(){
           popup.removeClass("popup_active");
         });
       }
-      
     });
   });
+  // валдиатор формы
   $(".owl-carousel").owlCarousel({
     margin: 30,
     loop: true,
@@ -50,36 +110,6 @@ $(document).ready(function(){
       }
     }
   });
-  /* $(".slider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: $(".arrow-left"),
-    nextArrow: $(".arrow-right"),
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 660,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-
-  }); */
 });
 
 
