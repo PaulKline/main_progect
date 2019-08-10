@@ -1120,12 +1120,6 @@ img {
   from {
     margin-bottom: 30%;
   }
-  50% {
-    margin-bottom: 20%;
-  }
-  75% {
-    margin-bottom: 10%;
-  }
   to {
     margin-left: 0;
   }
@@ -1134,12 +1128,6 @@ img {
 @keyframes cardBattom {
   from {
     margin-bottom: 30%;
-  }
-  50% {
-    margin-bottom: 20%;
-  }
-  75% {
-    margin-bottom: 10%;
   }
   to {
     margin-left: 0;
