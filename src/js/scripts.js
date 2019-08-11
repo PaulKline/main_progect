@@ -74,7 +74,6 @@ $(document).ready(function(){
   var popup = $("#popup");
   var close = $("#close");
   var left = $("#arrow-left");
-  // скрипт слайдера
   $("#offer-form").on("submit", function (event) {
     event.preventDefault();
     $.ajax({
@@ -84,14 +83,14 @@ $(document).ready(function(){
       success: function(data) {
         $(".success").text(data + ", ваша форма отправлена");
         $('form :input').val('');
-        $(popup).addClass("popup_active");
+        /* $(popup).addClass("popup_active");
         close.on("click", function () {
           popup.removeClass("popup_active");
-        });
+        }); */
       }
     });
   });
-  // валдиатор формы
+ /* сова карусель */
   $(".owl-carousel").owlCarousel({
     margin: 30,
     loop: true,

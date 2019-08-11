@@ -3,8 +3,8 @@ $(document).ready(function(){
     if ($(this).width() > 1200) {
       if ($(this).scrollTop() >= 0) {
         $(".hero-list").css("animation-name", "slideRight"),
-        $(".hero-list").css("animation-timing-function", "easeInOutElastic"),
-        $(".hero-list").css("animation-duration", "1s")
+        $(".hero-list").css("animation-iteration-count", 2),
+        $(".hero-list").css("animation-duration", "1.2s")
       };
     };
   });
