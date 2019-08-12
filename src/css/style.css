@@ -1080,20 +1080,29 @@ input.invalid:focus {
 }
 
 /* подключаем стили анимации */
-@-webkit-keyframes slideRight {
+@-webkit-keyframes titleRight {
   from {
-    margin-left: -30%;
+    font-size: 12px;
   }
   to {
-    margin-left: 0;
+    font-size: 30px;
   }
 }
-@keyframes slideRight {
+@keyframes titleRight {
   from {
-    margin-left: -30%;
+    font-size: 12px;
   }
   to {
-    margin-left: 0;
+    font-size: 30px;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -1121,6 +1130,42 @@ input.invalid:focus {
   }
   to {
     margin-left: 0;
+  }
+}
+
+@-webkit-keyframes hiddenSteps {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hiddenSteps {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes helpfullBack {
+  from {
+    background-color: #ffd200;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes helpfullBack {
+  from {
+    background-color: #ffd200;
+  }
+  to {
+    background-color: #ffffff;
   }
 }
 
