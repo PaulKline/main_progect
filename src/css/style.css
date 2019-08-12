@@ -74,6 +74,26 @@ img {
   border: 1px solid #FF8C00;
 }
 
+input.invalid {
+  border: 1px solid red;
+}
+
+input.invalid:focus {
+  border: 1px solid red;
+}
+
+.invalid {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.success-modal {
+  font-size: 12px;
+  text-align: left;
+}
+
 .arrow-left:hover, .arrow-right:hover {
   cursor: pointer;
 }
@@ -650,6 +670,7 @@ img {
 }
 
 .modal__button {
+  margin-right: 0;
   margin-top: 10px;
   margin-bottom: 20px;
   width: 75%;

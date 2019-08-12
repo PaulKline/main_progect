@@ -94,10 +94,10 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку
             бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="" class="form offer__form" id="offer-form">
+          <form action="" class="form offer__form valid-form" id="offer-form">
             <input type="text" name="username" class="input offer__input " placeholder="Ваше имя">
             <input type="tell" name="phone" class="input offer__input " id="phone-offer" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект</button> <!-- /.button offer__button -->
+            <button class="button offer__button valid-button">Получить бесплатный дизайн-проект</button> <!-- /.button offer__button -->
           </form id="offer-form">
           <div class="success"></div>
           <!-- /.form offer__form -->
@@ -298,13 +298,14 @@
           <div class="form brif-form">
             <h3 class="brif-form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="brif-form__subtitle">Для этого заполните форму ниже</span>
-            <form action="#" id="brif-form">
+            <form action="#" class="valid-form" id="brif-form">
               <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="input brif__input" id="phone" placeholder="Ваш телефон">
-              <input type="mail" name="email" class="input brif__input" placeholder="Ваша почта">
-              <button class="button brif__button">Рассчитать стоимость</button>
+              <input type="email" name="email" class="input brif__input" placeholder="Ваша почта">
+              <button class="button brif__button valid-button">Рассчитать стоимость</button>
               <span class="brif-form__description">Мы перезвоним Вам в течение 60 секунд </span>
             </form>
+            <div class="success-brif"></div>
           </div>
           <!-- /.brif__form -->
         </div>
@@ -329,11 +330,12 @@
       <h1 class="modal-dialog__title modal__title section-title">Узнайте точную стоимость
       ремонта по телефону!</h1>
       <span class="section-subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="" class="form modal__form" id="modal__form">
+      <form action="" class="form modal__form valid-form" id="modal__form">
         <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="input modal__input" id="phone-modal" placeholder="Ваш телефон">
-        <button class="button modal__button">Узнать стоимость</button> <!-- /.button offer__button -->
+        <button class="button modal__button valid-button">Узнать стоимость</button> <!-- /.button offer__button -->
       </form>
+      <div class="success-modal"></div>
       <span class="modal__support">Или Вы можете перезвонить нам сами </br>
       по телефону:</span>
       <strong></br>+7 (495) 42-251-31</strong>

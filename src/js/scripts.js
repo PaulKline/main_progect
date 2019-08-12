@@ -1,6 +1,13 @@
 $(document).ready(function(){
   new WOW().init();
+  var offer = $("#offer-form");
+  var popup = $("#popup");
+  var close = $("#close");
+  var left = $("#arrow-left");
+  var form = $("#offer-form");
   $("#brif-form").validate({
+    errorElement: "div",
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
@@ -21,11 +28,30 @@ $(document).ready(function(){
         minlength: jQuery.validator.format("осталось символов: {0}"),
         maxlength: "максимальное число символов - 15"
       },
-      email: "Укажите корректный email адрес",
+      email: {
+        required: "Заполните E-mail",
+        email: "Укажите корректный email адрес"
+      },
       phone: "укажите номер вашего телефона"
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: $("#brif-form").serialize(),
+        success: function (data) {
+          $(".success-brif").text(data + ", ваша форма отправлена");
+          $('input').val('');
+          $(popup).addClass("popup_active");
+          close.on("click", function () {
+            popup.removeClass("popup_active");
+          });
+        }
+      });
     }
   });
   $("#offer-form").validate({
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
@@ -43,9 +69,25 @@ $(document).ready(function(){
         maxlength: "максимальное число символов - 15"
       },
       phone: "укажите номер вашего телефона"
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: $("#offer-form").serialize(),
+        success: function (data) {
+          $(".success").text(data + ", ваша форма отправлена");
+          $('input').val('');
+          $(popup).addClass("popup_active");
+          close.on("click", function () {
+            popup.removeClass("popup_active");
+          });
+        }
+      });
     }
   });
   $("#modal__form").validate({
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
@@ -64,17 +106,28 @@ $(document).ready(function(){
       },
       phone: {
         required: "укажите номер вашего телефона"
-      }
+      },
     },
+    submitHandler: function (form) {
+      $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: $("#modal__form").serialize(),
+        success: function (data) {
+          $(".success-modal").text(data + ", ваша форма отправлена");
+          $('input').val('');
+          $(popup).addClass("popup_active");
+          close.on("click", function () {
+            popup.removeClass("popup_active");
+          });
+        }
+      });
+    }
   });
   $("#phone").mask("8(999) 999-9999");
   $("#phone-modal").mask("8(999) 999-9999");
   $("#phone-offer").mask("8(999) 999-9999");
-  var offer = $("#offer-form");
-  var popup = $("#popup");
-  var close = $("#close");
-  var left = $("#arrow-left");
-  $("#offer-form").on("submit", function (event) {
+  /* $("#offer-form").on("submit", function (event) {
     event.preventDefault();
     $.ajax({
       url:"mail.php",
@@ -83,13 +136,13 @@ $(document).ready(function(){
       success: function(data) {
         $(".success").text(data + ", ваша форма отправлена");
         $('form :input').val('');
-        /* $(popup).addClass("popup_active");
+        $(popup).addClass("popup_active");
         close.on("click", function () {
           popup.removeClass("popup_active");
-        }); */
+        });
       }
     });
-  });
+  }); */
  /* сова карусель */
   $(".owl-carousel").owlCarousel({
     margin: 30,
