@@ -1300,7 +1300,7 @@ input.invalid:focus {
 .steps__title {
   margin: auto;
   margin-bottom: 35px;
-  padding-top: 45px;
+  padding-top: 125px;
   max-width: 670px;
 }
 
@@ -1398,6 +1398,141 @@ input.invalid:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+/* стили подвала */
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 70px;
+  padding-left: 210px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 90px;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.contacts-list__text {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-weight: 300;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__text strong {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    position: relative;
+  }
+  .contacts {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+  .contacts__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 567px) {
+  .contacts {
+    padding-top: 65px;
+    padding-bottom: 30px;
+  }
+  .contacts__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts-list__icon {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
