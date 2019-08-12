@@ -1488,6 +1488,121 @@ input.invalid:focus {
   }
 }
 
+/* стили для блока nagline */
+.tagline {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  background-color: #ffc000;
+}
+
+.tagline__title {
+  text-align: center;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+@media (max-width: 567px) {
+  .tagline {
+    padding: 55px 30px 60px 30px;
+  }
+  .tagline__title {
+    text-align: center;
+    font-family: 'Museo Sans Cyrl 300', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* стили для блока helpful */
+.helpful {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.helpful-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.helpful__item {
+  position: relative;
+  width: 370px;
+  height: 410px;
+  z-index: 0;
+  padding: 22px 0 0 26px;
+}
+
+.helpful__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.helpful__text {
+  font-size: 16px;
+  z-index: 1;
+  max-width: 282px;
+  line-height: 23px;
+  display: block;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-weight: 300;
+}
+
+.helpful__text strong {
+  font-size: 15px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .helpful {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .helpful-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .helpful__item {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .helpful {
+    padding-top: 60px;
+  }
+  .helpful__item {
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
+    width: 272px;
+    height: 300px;
+  }
+  .helpful__text {
+    max-width: 220px;
+    margin: 15px 20px;
+    font-size: 12px;
+    line-height: 16.83px;
+  }
+  .helpful__text strong {
+    font-size: 12px;
+    line-height: 16.83px;
+  }
+}
+
 /* стили подвала */
 .footer {
   position: relative;
