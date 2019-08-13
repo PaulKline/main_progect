@@ -18,12 +18,12 @@
     +bold
     font-size: 16px
     line-height: 18px
-
   &-block
     display: flex
   &__interview
     flex-basis: 50%
   &-form
+    position: relative
     flex-basis: 50%
     padding-left: 200px
     text-align: center
@@ -54,7 +54,6 @@
   &-list
     list-style: none
     padding: 0
-
     &__item
       display: flex
       align-items: center
@@ -73,6 +72,18 @@
     &__text
       max-width: 400px 
       font-size: 18px 
+#username-brif-error
+  position: absolute
+  left: 50%
+  top: 22%
+#phone-brif-error
+  position: absolute
+  left: 50%
+  top: 38%
+#email-brif-error
+  position: absolute
+  left: 50%
+  top: 55%
 @media (max-width: 1200px)
   .brif
     &-form
@@ -95,6 +106,18 @@
         max-width: 280px  
       &__counter
         margin-right: 20px
+  #username-brif-error
+    position: absolute
+    left: 25%
+    top: 25%
+  #phone-brif-error
+    position: absolute
+    left: 25%
+    top: 40%
+  #email-brif-error
+    position: absolute
+    left: 25%
+    top: 55%
 @media (max-width: 768px)
   .brif
     padding-top: 60px
@@ -109,6 +132,18 @@
       margin-top: 60px
       &__description
         display: block
+  #username-brif-error
+    position: absolute
+    left: 25%
+    top: 21%
+  #phone-brif-error
+    position: absolute
+    left: 25%
+    top: 38%
+  #email-brif-error
+    position: absolute
+    left: 25%
+    top: 54%
 @media (max-width: 567px)  
   .brif
     padding-top: 45px
@@ -151,3 +186,12 @@
       &__title
         font-size: 18px
         line-height: 25px
+  #username-brif-error
+    left: 18%
+    top: 17%
+  #phone-brif-error
+    left: 18%
+    top: 35%
+  #email-brif-error
+    left: 18%
+    top: 55%

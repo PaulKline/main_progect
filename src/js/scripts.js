@@ -84,6 +84,7 @@ $(document).ready(function(){
     }
   });
   $("#offer-form").validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       username: {
@@ -120,6 +121,7 @@ $(document).ready(function(){
     }
   });
   $("#modal__form").validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       username: {

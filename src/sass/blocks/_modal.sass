@@ -9,6 +9,8 @@
   &_active
     display: flex
   &__title
+  &-form
+    position: relative
     text-align: center
     font-size: 22px
     line-height: 33px 
@@ -59,10 +61,16 @@
       outline: none
       &:hover
         cursor: pointer
-.error
-  display: inline-flex
-  margin: 0
-  font-size: 14px
+#username-modal-error.invalid
+  position: absolute
+  left: 30%
+  top: 36.5%
+#phone-modal-error.invalid
+  position: absolute
+  left: 30%
+  top: 50%
+
+  
 @media (max-width: 768px)
   .modal
     &-dialog
@@ -106,6 +114,14 @@
       padding-top: 20px
       font-size: 16px
       line-height: 24px
-
+  #username-modal-error.invalid
+    position: absolute
+    left: 18%
+    top: 34%
+    font-size: 12px
+  #phone-modal-error.invalid
+    left: 18%
+    top: 47%
+    font-size: 12px
 
   

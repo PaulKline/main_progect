@@ -527,6 +527,18 @@ input.invalid:focus {
   font-weight: 700;
 }
 
+#username-offer-error {
+  position: absolute;
+  left: 2%;
+  top: 56%;
+}
+
+#phone-offer-error {
+  position: absolute;
+  left: 42%;
+  top: 56%;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -552,6 +564,14 @@ input.invalid:focus {
     padding: 0;
     font-size: 15px;
     margin-bottom: 7px;
+  }
+  #username-offer-error {
+    left: 2%;
+    top: 48%;
+  }
+  #phone-offer-error {
+    left: 2%;
+    top: 62%;
   }
 }
 
@@ -628,6 +648,14 @@ input.invalid:focus {
     margin-bottom: 8px;
     margin-left: 0;
   }
+  #username-offer-error {
+    left: 7%;
+    top: 47.5%;
+  }
+  #phone-offer-error {
+    left: 7%;
+    top: 59%;
+  }
 }
 
 /* стили для модального окна */
@@ -647,7 +675,8 @@ input.invalid:focus {
   display: flex;
 }
 
-.modal__title {
+.modal-form {
+  position: relative;
   text-align: center;
   font-size: 22px;
   line-height: 33px;
@@ -716,12 +745,16 @@ input.invalid:focus {
   cursor: pointer;
 }
 
-.error {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  font-size: 14px;
+#username-modal-error.invalid {
+  position: absolute;
+  left: 30%;
+  top: 36.5%;
+}
+
+#phone-modal-error.invalid {
+  position: absolute;
+  left: 30%;
+  top: 50%;
 }
 
 @media (max-width: 768px) {
@@ -778,6 +811,17 @@ input.invalid:focus {
     font-size: 16px;
     line-height: 24px;
   }
+  #username-modal-error.invalid {
+    position: absolute;
+    left: 18%;
+    top: 34%;
+    font-size: 12px;
+  }
+  #phone-modal-error.invalid {
+    left: 18%;
+    top: 47%;
+    font-size: 12px;
+  }
 }
 
 /* стили для кнопки скролла */
@@ -811,6 +855,7 @@ input.invalid:focus {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 9999;
 }
 
 .popup_active {
@@ -1209,6 +1254,7 @@ input.invalid:focus {
 }
 
 .brif-form {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 200px;
@@ -1287,6 +1333,24 @@ input.invalid:focus {
   font-size: 18px;
 }
 
+#username-brif-error {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+}
+
+#phone-brif-error {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+}
+
+#email-brif-error {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+
 @media (max-width: 1200px) {
   .brif-form {
     padding-left: 30px;
@@ -1315,6 +1379,21 @@ input.invalid:focus {
   .interview-list__counter {
     margin-right: 20px;
   }
+  #username-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  #phone-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+  }
+  #email-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 55%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1337,6 +1416,21 @@ input.invalid:focus {
   }
   .brif-form__description {
     display: block;
+  }
+  #username-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 21%;
+  }
+  #phone-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 38%;
+  }
+  #email-brif-error {
+    position: absolute;
+    left: 25%;
+    top: 54%;
   }
 }
 
@@ -1392,6 +1486,18 @@ input.invalid:focus {
   .interview-form__title {
     font-size: 18px;
     line-height: 25px;
+  }
+  #username-brif-error {
+    left: 18%;
+    top: 17%;
+  }
+  #phone-brif-error {
+    left: 18%;
+    top: 35%;
+  }
+  #email-brif-error {
+    left: 18%;
+    top: 55%;
   }
 }
 
