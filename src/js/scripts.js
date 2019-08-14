@@ -149,6 +149,7 @@ $(document).ready(function(){
         type: "POST",
         data: $("#modal__form").serialize(),
         success: function (data) {
+          yaCounter54886849.reachGoal('spend');
           $(".success-modal").text(data + ", ваша форма отправлена");
           $('input').val('');
           $(popup).addClass("popup_active");

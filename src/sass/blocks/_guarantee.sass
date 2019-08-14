@@ -1,0 +1,61 @@
+.guarantee
+  padding-top: 35px
+  padding-bottom: 225px
+  &__title
+    margin: auto
+    margin-bottom: 99px
+    max-width: 670px
+    +bold
+    font-size: 30px
+    line-height: 45px
+  &-block
+    display: flex
+    justify-content: space-around
+  &__item 
+    display: flex
+    align-items: center
+    flex-direction: column
+    max-width: 290px
+  &__image
+    max-width: 270px  
+    padding-top: 25px
+    padding-bottom: 27px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    background-color: $secondary
+    &:first-child
+      padding-left: 25px
+      padding-right: 25px
+  &__text
+    margin-top: 31px
+    text-align: center
+    +reg
+    font-size: 18px
+    line-height: 24px
+  & img
+    width: 219px
+@media (max-width: 1200px)
+  .guarantee
+    &-block
+      flex-wrap: wrap
+@media (max-width: 567px)
+  .guarantee
+    padding-top: 0px
+    padding-bottom: 90px
+    &__title
+      margin-bottom: 40px
+      +bold
+      font-size: 18px
+      line-height: 22px
+      max-width: 250px
+    &__item
+      margin-bottom: 40px
+    &__image
+      padding-left: 24px
+      padding-right: 24px
+    &__text
+      max-width: 240px
+      font-size: 14px
+      line-height: 18px
