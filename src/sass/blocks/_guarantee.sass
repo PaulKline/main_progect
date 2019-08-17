@@ -16,6 +16,9 @@
     align-items: center
     flex-direction: column
     max-width: 290px
+    margin-left: 30px
+    &:first-child
+      margin-left: 10px
   &__image
     max-width: 270px  
     padding-top: 25px
@@ -34,16 +37,20 @@
     +reg
     font-size: 18px
     line-height: 24px
+    max-width: 290px
   & img
     width: 219px
 @media (max-width: 1200px)
   .guarantee
+    padding-bottom: 50px
     &-block
       flex-wrap: wrap
+    &__item
+      margin-bottom: 20px
 @media (max-width: 567px)
   .guarantee
     padding-top: 0px
-    padding-bottom: 90px
+    padding-bottom: 40px
     &__title
       margin-bottom: 40px
       +bold
@@ -52,10 +59,13 @@
       max-width: 250px
     &__item
       margin-bottom: 40px
+      margin-left: 0
     &__image
       padding-left: 24px
       padding-right: 24px
     &__text
+      margin-top: 34px
       max-width: 240px
       font-size: 14px
       line-height: 18px
+  

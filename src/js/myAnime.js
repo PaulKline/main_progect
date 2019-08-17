@@ -10,18 +10,6 @@ $(document).ready(function(){
   });
   $(window).scroll(function () {
     if ($(this).width() > 1200) {
-      if ($(this).scrollTop() >= 1900) {
-        $(".price__card").css("animation-name", "cardBattom"),
-        $(".price__card").css("animation-timing-function", "easeInOutElastic"),
-        $(".price__card").css("animation-duration", "1.2s")
-        $(".pc2").css("animation-name", "cardBattom"),
-        $(".pc2").css("animation-timing-function", "easeInOutElastic"),
-        $(".pc2").css("animation-duration", "1.2s")
-      };
-    };
-  });
-  $(window).scroll(function () {
-    if ($(this).width() > 1200) {
       if ($(this).scrollTop() >= 2300) {
         $(".steps").css("animation-name", "hiddenSteps"),
         $(".steps").css("animation-duration", "5s")

@@ -44,9 +44,13 @@ input.invalid
 .arrow-left, .arrow-right
     &:hover
       cursor: pointer
+@-moz-document url-prefix()
 @media (max-width: 1200px)
   .container 
     max-width: 760px
+  .button
+    &:hover
+      background-color: $main-color
 @media (max-width: 768px)
   .container 
     max-width: 535px

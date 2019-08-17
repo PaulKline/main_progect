@@ -67,6 +67,12 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+@media (max-width: 1200px)
+  .card
+    &:hover
+      box-shadow: none
+      .card__Image:before
+        opacity: 0
 @media (max-width: 768px)
   .price 
     &__cards
@@ -88,6 +94,8 @@
       font-size: 14px
       margin-top: 10px
       margin-bottom: 45px
+    &__card
+      margin-bottom: 31px
   .card
     &__title
       font-size: 14px

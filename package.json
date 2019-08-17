@@ -1,0 +1,36 @@
+{
+  "name": "main_progect",
+  "version": "1.0.0",
+  "description": "рабочий проект курса",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulKline/main_progect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulKline/main_progect/issues"
+  },
+  "homepage": "https://github.com/PaulKline/main_progect#readme",
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "dav": "^1.8.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "install": "^0.13.0",
+    "npm": "^6.10.3",
+    "pump": "^3.0.0",
+    "save": "^2.4.0"
+  }
+}

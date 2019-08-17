@@ -1,38 +1,4 @@
 $(document).ready(function(){
-  new WOW().init();
-  ymaps.ready(init);
-  function init() {
-    // Создание карты.    
-    var myMap = new ymaps.Map("map", {
-      center: [55.61140906914171, 37.201122499999975],
-      zoom: 13,
-      controls: [
-        'zoomControl', 
-        'rulerControl', 
-      ]
-    });
-    var address = 'Россия, Москва, посёлок Толстопальцево, улица Ленина, 10';
-    var geocoder = ymaps.geocode(address);
-    geocoder.then(
-      function (res) {
-
-        // координаты объекта
-        var coordinates = res.geoObjects.get(0).geometry.getCoordinates();
-
-        // Добавление метки (Placemark) на карту
-        var placemark = new ymaps.Placemark(
-          coordinates, {
-            'hintContent': address
-          }, {
-            'preset': 'islands#redDotIcon'
-          }
-        );
-
-        myMap.geoObjects.add(placemark);
-      }
-    );
-    myMap.behaviors.disable('scrollZoom');
-  };
   var offer = $("#offer-form");
   var popup = $("#popup");
   var close = $("#close");
@@ -160,7 +126,7 @@ $(document).ready(function(){
       });
     }
   });
-  $("#phone").mask("8(999) 999-9999");
+  $("#phone-brif").mask("8(999) 999-9999");
   $("#phone-modal").mask("8(999) 999-9999");
   $("#phone-offer").mask("8(999) 999-9999");
  /* сова карусель */
